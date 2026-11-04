@@ -1,5 +1,7 @@
 # Tarefas API
 
+![Tests](https://github.com/LuisFelipe100508/tarefas-api/actions/workflows/tests.yml/badge.svg)
+
 API REST de gerenciamento de tarefas com autenticação JWT, onde cada usuário acessa apenas as próprias tarefas.
 
 **Demo ao vivo:** https://tarefas-api-8yoz.onrender.com/api/docs/
