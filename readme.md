@@ -90,6 +90,6 @@ python -m pytest
 - O throttling usa cache em memória (por processo). Em produção real, o ideal seria Redis.
 - O plano gratuito hiberna por inatividade.
 
-## Melhorias futuras
+- **CI com GitHub Actions:**
 
-Filtros e busca, categorias de tarefas, CI com GitHub Actions e logs estruturados.
+Os testes rodam a cada push e pull request, sem segredos reais (chave falsa só para o ambiente de teste).
