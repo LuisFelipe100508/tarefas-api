@@ -2,6 +2,7 @@ from django.contrib import admin
 from django.urls import include, path
 from drf_spectacular.views import SpectacularAPIView, SpectacularSwaggerView
 from rest_framework_simplejwt.views import TokenRefreshView
+from django.views.generic import RedirectView
 
 from users.views import RegisterView, ThrottledTokenObtainPairView
 
@@ -13,4 +14,5 @@ urlpatterns = [
     path("api/", include("tasks.urls")),
     path("api/schema/", SpectacularAPIView.as_view(), name="schema"),
     path("api/docs/", SpectacularSwaggerView.as_view(url_name="schema"), name="swagger"),
+    path("", RedirectView.as_view(url="/api/docs/", permanent=False)),
 ]
